@@ -35,7 +35,27 @@ a {
   margin-left: 5em;
 }
 
+.boxForm {
+  width: 30em;
+  display : inline-block;
+  margin-left: 5em;
+}
+
+.boxForm Input {
+  width: 39em;
+}
+
 .box Label{
   margin-top: 0.5em;
   color: $gray-400
+}
+
+.boxForm Label{
+  margin-top: 0.5em;
+  color: $gray-400
+}
+
+.chk {
+  position: relative;
+  left: 20em;
 }
