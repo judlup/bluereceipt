@@ -1,12 +1,11 @@
 @import "../variables.scss";
 
-.container {
-  color: $gray-700;
+.container {  
   letter-spacing: -0.02em;
   font-size: 14px;
   outline: none;
 
-  .label {
+  .label {    
     height: 18px;
     line-height: 18px;
     font-weight: 500;
@@ -14,21 +13,23 @@
   }
 
   &.right {
+    color:  $blue-900;    
     display: inline-flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
 
-    .label {
+    .label {      
       margin: 0;
       padding-left: 12px;
       height: 100%;
       display: flex;
       align-items: center;
     }
-  }
+  }  
 }
 
-.disabled {
-  color: $gray-400;
+.disabled {  
+  color:  $gray-200 !important;  
 }
+
