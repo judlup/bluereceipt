@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import Input from '../Input/Input';
 import Label from '../Label/Label';
 import styles from './Checkbox.module.scss';
+import { checkbox } from '../Icons/Icons.stories';
 
 interface Props {
   /**
@@ -59,11 +60,16 @@ const Checkbox: FC<Props> = forwardRef((props, ref) => {
     [isChecked, onChange],
   );    
 
+  const classes = classNames(    
+    className,
+    { [styles.Checkbox]: checkbox, [styles.checked]: isChecked ,[styles.disabled]: disabled },
+  );
+
   return (
     <Label title={label || ''} disabled={disabled} position='right'>            
       <input
         type='checkbox'
-        className={styles.input}
+        className={classes}
         ref={ref}
         checked={isChecked}
         disabled={disabled}

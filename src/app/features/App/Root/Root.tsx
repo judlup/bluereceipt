@@ -48,7 +48,7 @@ class Root extends Component {
           </div>
           <div className="box">
           <Label title="Active"> </Label>  
-          <Checkbox label=" Checkbox"  onChange={(e) => this.fn(e)}></Checkbox>
+          <Checkbox checked={true} label=" Checkbox"  onChange={(e) => this.fn(e)}></Checkbox>
           </div>
           <div className="box">
           <Label title="Disabled"> </Label>  
