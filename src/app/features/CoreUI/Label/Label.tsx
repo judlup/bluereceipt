@@ -55,7 +55,7 @@ const Label: FC<Props> = forwardRef((props, ref) => {
   );
 
   return (
-    <label className={classes} ref={ref} tabIndex={tabIndex} onKeyPress={onKeyPress} role='presentation'>
+    <label className={classes} ref={ref} tabIndex={tabIndex} onKeyPress={onKeyPress} role='presentation'>      
       {text}
       {children}
     </label>

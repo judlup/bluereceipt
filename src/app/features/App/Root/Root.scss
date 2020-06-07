@@ -21,3 +21,21 @@ body {
 a {
   color: $link-text-color;
 }
+
+.title {
+  color: $blue-500; // #3385FF;
+  margin-left: 5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.box {
+  display : inline-block;
+  margin-left: 5em;
+}
+
+.box Label{
+  margin-top: 0.5em;
+  color: $gray-400
+}
